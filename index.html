@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Boost</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .hero {
+        background-image: url(img/office-team.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 93vh;
+      }
+      .overlay {
+        min-height: 93vh;
+        background-color: rgba(35, 35, 35, 0.681);
+      }
+      .service-card {
+        border: none;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .icon-style {
+        color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
+        margin: 0 auto 20px;
+        background: #0d6efd;
+      }
+      .stats-style {
+        background: #0d6efd;
+        color: white;
+      }
+      .portfolio-img {
+        border-radius: 10px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .testimonial-card {
+        border-radius: 15px;
+      }
+      .footer{
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pixel Boost</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="ms-auto navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero ">
+      <div class="overlay p-5">
+        <div class="row">
+          <div class="col-lg-7 p-4">
+            <h1 class="fw-bold pt-5 mb-4 display-4 text-light">
+              Grow Your Brand With Powerful Digital Solutions
+            </h1>
+            <p class="lead text-light mb-5">
+              We help businesses grow through Digital Marketing, Graphic Design,
+              and Professional Video Editing.
+            </p>
+            <div>
+              <a href="" class="btn btn-primary btn-lg me-2">Our services</a>
+              <a href="" class="btn btn-outline-light btn-lg me-2"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <section class="container py-5" id="about">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="img/conference room-img.jpg"
+            alt="conference room"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold display-5 mt-4 mt-lg-0">About us</h2>
+          <p>
+            PixelBoost is a creative digital agency focused on helping
+            businesses establish a strong online presence and attract more
+            customers.
+          </p>
+          <p>
+            Our team combines creativity, strategy, and technology to deliver
+            impactful marketing campaigns, eye-catching designs, and engaging
+            videos.
+          </p>
+          <div class="row mt-4">
+            <div class="col-6">
+              <h3 class="text-primary fs-3 fw-bold">250+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="col-6">
+              <h3 class="text-primary fs-3 fw-bold">120+</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section  -->
+    <section class="bg-light py-5" id="services">
+      <div class="container text-center">
+        <h2 class="fw-bold display-6">Our Services</h2>
+        <p class="mb-5">
+          We provide complete digital solutions to help your business stand out.
+        </p>
+        <div class="row g-4">
+          <!-- card 1 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 p-4 text-center shadow-sm">
+              <div class="icon-style">
+                <i class="bi bi-megaphone-fill"></i>
+              </div>
+              <h4>Digital Marketing</h4>
+              <p>
+                SEO, Social Media Marketing, Google Ads, Content Marketing, and
+                Lead Generation strategies.
+              </p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 p-4 text-center shadow-sm">
+              <div class="icon-style"><i class="bi bi-palette-fill"></i></div>
+              <h4>Graphic Design</h4>
+              <p>
+                Creative branding, logo design, posters, social media creatives,
+                brochures, and business designs.
+              </p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 p-4 text-center shadow-sm">
+              <div class="icon-style">
+                <i class="bi bi-camera-reels-fill"></i>
+              </div>
+              <h4>Video Editing</h4>
+              <p>
+                Professional promotional videos, reels, advertisements, YouTube
+                editing, and motion graphics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats section -->
+    <section class="stats-style py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <h2 class="fw-bold">500+</h2>
+            <p>Social Reach</p>
+          </div>
+          <div class="col-md-3">
+            <h2 class="fw-bold">350+</h2>
+            <p>Campaigns Managed</p>
+          </div>
+          <div class="col-md-3">
+            <h2 class="fw-bold">98%</h2>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="col-md-3">
+            <h2 class="fw-bold">24/7</h2>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Portfolio  -->
+    <section class="py-5" id="portfolio">
+      <div class="container text-center">
+        <h2 class="fw-bold display-6">Our Portfolio</h2>
+        <p class="mb-5">
+          A glimpse of some creative projects we have worked on.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="img/Laptop1.avif" alt="Project 1" class="portfolio-img" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/Laptop2.avif" alt="Project 2" class="portfolio-img" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/Laptop3.avif" alt="Project 3" class="portfolio-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="bg-light py-5" id="testimonials">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <h2 class="fw-bold display-6 mb-lg-5">What Clients Say</h2>
+        </div>
+        <div class="row g-4">
+          <!-- card 1 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm">
+              <p>
+                "Their marketing strategies helped us increase our online sales
+                tremendously."
+              </p>
+              <h5 class="mt-3 mb-0">Rahul Sharma</h5>
+              <small>Business Owner </small>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm">
+              <p>"Amazing graphic designs and very professional service."</p>
+              <h5 class="mt-3 mb-0">Aisha Khan</h5>
+              <small>Startup Founder </small>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm">
+              <p>
+                "Their video editing team delivered cinematic quality videos for
+                our brand."
+              </p>
+              <h5 class="mt-3 mb-0">David Roy</h5>
+              <small>Content Creator</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="pb-5" id="contact-us">
+      <div class="container">
+        <h2 class="text-center pt-5 p-3">Contact Us</h2>
+        <p class="text-center mb-5">
+          Please send us your message and we will reply back to you within 24
+          hours
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/xyegkrkz" method="post">
+              <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="Your Name"
+                class="form-control mb-4"
+              />
+              <input
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                placeholder="Your Email"
+                class="form-control mb-4"
+              />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                class="form-control mb-4"
+              />
+              <input
+                type="number"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Your Phone Number with Country Code"
+                class="form-control mb-4"
+              />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+                class="form-control mb-4"
+                rows="4"
+              ></textarea>
+              <button class="btn btn-primary w-100 text-center">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="h-100 bg-light p-3 rounded">
+              <div class="container">
+                <h4 class="mt-3">Agency Information</h4>
+                <p class="mt-4">
+                  <i class="bi bi-geo-alt-fill text-primary"></i> Bhatkal,
+                  Karnataka, India
+                </p>
+                <p>
+                  <i class="bi bi-envelope-fill text-primary"></i>
+                  info@pixelboost.com
+                </p>
+                <p class="mb-5">
+                  <i class="bi bi-telephone-fill text-primary"></i> +91 98765
+                  43210
+                </p>
+                <div class="row">
+                  <a href="https://www.facebook.com" class="btn btn-dark mx-2" style="width: 8%">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com" class="btn btn-dark me-2" style="width: 8%">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com" class="btn btn-dark me-2" style="width: 8%">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.youtube.com" class="btn btn-dark me-2" style="width: 8%">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-4">
+      <div class="container text-center">
+          <p class="mb-0">&copy; 2026 PixelBoost Agency. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
